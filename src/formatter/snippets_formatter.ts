@@ -5,7 +5,7 @@ import { parseTestCaseAttempt } from './helpers'
 export default class SnippetsFormatter extends Formatter {
   constructor(options) {
     super(options)
-    options.eventBroadcaster.on('test-run-finished', ::this.logSnippets)
+    options.eventBroadcaster.on('test-run-finished', this.logSnippets.bind(this))
   }
 
   logSnippets() {

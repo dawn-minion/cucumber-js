@@ -1,0 +1,285 @@
+src/formatter/event_protocol_formatter.ts(36,5): error TS2322: Type 'RegExp' is not assignable to type 'string'.
+src/formatter/get_color_fns.ts(12,21): error TS2749: 'Status' refers to a value, but is being used as a type here.
+src/formatter/get_color_fns.ts(26,25): error TS2749: 'Status' refers to a value, but is being used as a type here.
+src/formatter/get_color_fns.ts(45,25): error TS2749: 'Status' refers to a value, but is being used as a type here.
+src/formatter/helpers/test_case_attempt_parser.ts(3,8): error TS1192: Module '"/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type"' has no default export.
+src/formatter/helpers/test_case_attempt_parser.ts(36,9): error TS2339: Property 'actionLocation' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(39,9): error TS2339: Property 'keyword' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(40,9): error TS2339: Property 'sourceLocation' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(41,9): error TS2339: Property 'text' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(43,9): error TS2339: Property 'keyword' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(50,9): error TS2339: Property 'arguments' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/test_case_attempt_parser.ts(53,9): error TS2339: Property 'snippet' does not exist on type '{ attachments: any; result: any; }'.
+src/formatter/helpers/usage_helpers/index.ts(40,17): error TS2339: Property 'duration' does not exist on type '{ line: any; text: any; uri: any; }'.
+src/formatter/index.ts(22,13): error TS2391: Function implementation is missing or not immediately following the declaration.
+src/formatter/json_formatter.ts(13,30): error TS2554: Expected 2 arguments, but got 1.
+src/formatter/json_formatter.ts(29,58): error TS2341: Property 'gherkinDocumentMap' is private and only accessible within class 'EventDataCollector'.
+src/formatter/json_formatter.ts(30,49): error TS2341: Property 'pickleMap' is private and only accessible within class 'EventDataCollector'.
+src/formatter/progress_bar_formatter.ts(15,10): error TS2339: Property 'numberOfSteps' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(16,10): error TS2339: Property 'issueCount' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(20,10): error TS2339: Property 'numberOfSteps' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(24,10): error TS2339: Property 'progressBar' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(28,19): error TS2339: Property 'numberOfSteps' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(29,26): error TS2339: Property 'columns' does not exist on type 'Writable'.
+src/formatter/progress_bar_formatter.ts(36,12): error TS2339: Property 'progressBar' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(42,12): error TS2339: Property 'issueCount' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(46,12): error TS2339: Property 'progressBar' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(49,24): error TS2339: Property 'issueCount' does not exist on type 'ProgressBarFormatter'.
+src/formatter/progress_bar_formatter.ts(58,14): error TS2339: Property 'progressBar' does not exist on type 'ProgressBarFormatter'.
+src/formatter/rerun_formatter.ts(13,10): error TS2339: Property 'mapping' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(14,10): error TS2339: Property 'separator' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(19,17): error TS2339: Property 'mapping' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(20,14): error TS2339: Property 'mapping' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(22,12): error TS2339: Property 'mapping' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(27,31): error TS2339: Property 'mapping' does not exist on type 'RerunFormatter'.
+src/formatter/rerun_formatter.ts(29,18): error TS2339: Property 'separator' does not exist on type 'RerunFormatter'.
+src/formatter/step_definition_snippet_builder/index.ts(7,10): error TS2339: Property 'snippetSyntax' does not exist on type 'StepDefinitionSnippetBuilder'.
+src/formatter/step_definition_snippet_builder/index.ts(8,10): error TS2339: Property 'cucumberExpressionGenerator' does not exist on type 'StepDefinitionSnippetBuilder'.
+src/formatter/step_definition_snippet_builder/index.ts(17,39): error TS2339: Property 'cucumberExpressionGenerator' does not exist on type 'StepDefinitionSnippetBuilder'.
+src/formatter/step_definition_snippet_builder/index.ts(22,17): error TS2339: Property 'snippetSyntax' does not exist on type 'StepDefinitionSnippetBuilder'.
+src/formatter/step_definition_snippet_builder/index.ts(32,24): error TS2339: Property 'EVENT' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index.ts(34,24): error TS2339: Property 'OUTCOME' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index.ts(36,24): error TS2339: Property 'PRECONDITION' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index_spec.ts(21,34): error TS2339: Property 'PRECONDITION' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index_spec.ts(31,46): error TS2339: Property 'PRECONDITION' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index_spec.ts(43,46): error TS2339: Property 'EVENT' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/index_spec.ts(55,46): error TS2339: Property 'OUTCOME' does not exist on type 'typeof import("/Users/charlesrudolph/projects/cucumber-js/src/formatter/helpers/keyword_type")'.
+src/formatter/step_definition_snippet_builder/javascript_snippet_syntax.ts(5,10): error TS2339: Property 'snippetInterface' does not exist on type 'JavaScriptSnippetSyntax'.
+src/formatter/step_definition_snippet_builder/javascript_snippet_syntax.ts(10,14): error TS2339: Property 'snippetInterface' does not exist on type 'JavaScriptSnippetSyntax'.
+src/formatter/step_definition_snippet_builder/javascript_snippet_syntax.ts(12,21): error TS2339: Property 'snippetInterface' does not exist on type 'JavaScriptSnippetSyntax'.
+src/formatter/step_definition_snippet_builder/javascript_snippet_syntax.ts(17,14): error TS2339: Property 'snippetInterface' does not exist on type 'JavaScriptSnippetSyntax'.
+src/formatter/step_definition_snippet_builder/javascript_snippet_syntax.ts(29,18): error TS2339: Property 'snippetInterface' does not exist on type 'JavaScriptSnippetSyntax'.
+src/formatter/usage_formatter.ts(58,20): error TS2345: Argument of type 'string[]' is not assignable to parameter of type 'Cell[] & VerticalTableRow & CrossTableRow'.
+  Type 'string[]' is not assignable to type 'VerticalTableRow'.
+    Index signature is missing in type 'string[]'.
+src/index.ts(38,42): error TS2339: Property 'defineSupportCode' does not exist on type 'IDefineSupportCodeMethods'.
+src/models/data_table.ts(5,10): error TS2339: Property 'rawTable' does not exist on type 'DataTable'.
+src/models/data_table.ts(18,17): error TS2339: Property 'rawTable' does not exist on type 'DataTable'.
+src/models/definition.ts(3,10): error TS2339: Property 'code' does not exist on type 'Definition'.
+src/models/definition.ts(4,10): error TS2339: Property 'line' does not exist on type 'Definition'.
+src/models/definition.ts(5,10): error TS2339: Property 'options' does not exist on type 'Definition'.
+src/models/definition.ts(6,10): error TS2339: Property 'uri' does not exist on type 'Definition'.
+src/models/definition.ts(11,28): error TS2339: Property 'code' does not exist on type 'Definition'.
+src/models/step_definition.ts(8,10): error TS2339: Property 'pattern' does not exist on type 'StepDefinition'.
+src/models/step_definition.ts(9,10): error TS2339: Property 'expression' does not exist on type 'StepDefinition'.
+src/models/step_definition.ts(13,37): error TS2339: Property 'expression' does not exist on type 'StepDefinition'.
+src/models/step_definition.ts(29,25): error TS2339: Property 'expression' does not exist on type 'StepDefinition'.
+src/models/test_case_hook_definition.ts(6,11): error TS2556: Expected 1 arguments, but got 0 or more.
+src/models/test_case_hook_definition.ts(7,10): error TS2339: Property 'pickleFilter' does not exist on type 'TestCaseHookDefinition'.
+src/models/test_case_hook_definition.ts(8,27): error TS2339: Property 'options' does not exist on type 'TestCaseHookDefinition'.
+src/models/test_case_hook_definition.ts(13,17): error TS2339: Property 'pickleFilter' does not exist on type 'TestCaseHookDefinition'.
+src/pickle_filter.ts(15,10): error TS2339: Property 'featureUriToLinesMapping' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(18,10): error TS2339: Property 'names' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(20,12): error TS2339: Property 'tagExpressionNode' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(56,24): error TS2339: Property 'featureUriToLinesMapping' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(64,14): error TS2339: Property 'names' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(67,24): error TS2339: Property 'names' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(71,15): error TS2339: Property 'tagExpressionNode' does not exist on type 'PickleFilter'.
+src/pickle_filter.ts(74,17): error TS2339: Property 'tagExpressionNode' does not exist on type 'PickleFilter'.
+src/runtime/attachment_manager/index.ts(15,11): error TS2391: Function implementation is missing or not immediately following the declaration.
+src/runtime/attachment_manager/index.ts(21,25): error TS2304: Cannot find name 'ReadableStream'.
+src/runtime/attachment_manager/index.ts(36,41): error TS2345: Argument of type '{ type: string; }' is not assignable to parameter of type 'IAttachmentMedia'.
+  Property 'encoding' is missing in type '{ type: string; }' but required in type 'IAttachmentMedia'.
+src/runtime/attachment_manager/index.ts(51,32): error TS2304: Cannot find name 'ReadableStream'.
+src/runtime/index.ts(14,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Runtime'.
+src/runtime/index.ts(15,10): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(16,10): error TS2339: Property 'stackTraceFilter' does not exist on type 'Runtime'.
+src/runtime/index.ts(17,10): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Runtime'.
+src/runtime/index.ts(18,10): error TS2339: Property 'testCases' does not exist on type 'Runtime'.
+src/runtime/index.ts(19,10): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(26,29): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Runtime'.
+src/runtime/index.ts(33,16): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Runtime'.
+src/runtime/index.ts(46,55): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(48,12): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(48,36): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(48,62): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(50,30): error TS2339: Property 'eventBroadcaster' does not exist on type 'Runtime'.
+src/runtime/index.ts(53,32): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Runtime'.
+src/runtime/index.ts(55,29): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(59,12): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(62,12): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(67,14): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(68,12): error TS2339: Property 'stackTraceFilter' does not exist on type 'Runtime'.
+src/runtime/index.ts(70,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Runtime'.
+src/runtime/index.ts(72,29): error TS2339: Property 'testCases' does not exist on type 'Runtime'.
+src/runtime/index.ts(74,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Runtime'.
+src/runtime/index.ts(74,68): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(75,14): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/index.ts(76,12): error TS2339: Property 'stackTraceFilter' does not exist on type 'Runtime'.
+src/runtime/index.ts(78,17): error TS2339: Property 'result' does not exist on type 'Runtime'.
+src/runtime/index.ts(84,42): error TS2339: Property 'options' does not exist on type 'Runtime'.
+src/runtime/parallel/master.ts(27,10): error TS2339: Property 'cwd' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(28,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(29,10): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(30,10): error TS2339: Property 'supportCodePaths' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(31,10): error TS2339: Property 'supportCodeRequiredModules' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(32,10): error TS2339: Property 'testCases' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(33,10): error TS2339: Property 'nextTestCaseIndex' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(34,10): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(38,10): error TS2339: Property 'slaves' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(47,14): error TS2339: Property 'eventBroadcaster' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(59,17): error TS2339: Property 'cwd' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(68,10): error TS2339: Property 'slaves' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(73,13): error TS2339: Property 'closed' does not exist on type '{ process: ChildProcess; }'.
+src/runtime/parallel/master.ts(78,31): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(79,30): error TS2339: Property 'supportCodePaths' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(80,40): error TS2339: Property 'supportCodeRequiredModules' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(81,29): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(87,12): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(89,22): error TS2339: Property 'slaves' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(90,12): error TS2339: Property 'eventBroadcaster' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(90,70): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(91,12): error TS2339: Property 'onFinish' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(91,26): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(97,12): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(103,12): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(108,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(110,10): error TS2339: Property 'onFinish' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(114,14): error TS2339: Property 'nextTestCaseIndex' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(114,41): error TS2339: Property 'testCases' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(118,27): error TS2339: Property 'testCases' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(118,42): error TS2339: Property 'nextTestCaseIndex' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(119,10): error TS2339: Property 'nextTestCaseIndex' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(120,55): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(122,12): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(122,36): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(122,62): error TS2339: Property 'result' does not exist on type 'Master'.
+src/runtime/parallel/master.ts(129,42): error TS2339: Property 'options' does not exist on type 'Master'.
+src/runtime/parallel/slave.ts(34,10): error TS2339: Property 'id' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(35,10): error TS2551: Property 'initialized' does not exist on type 'Slave'. Did you mean 'initialize'?
+src/runtime/parallel/slave.ts(36,10): error TS2339: Property 'cwd' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(37,10): error TS2339: Property 'exit' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(38,10): error TS2339: Property 'sendMessage' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(39,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(40,10): error TS2339: Property 'stackTraceFilter' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(42,12): error TS2339: Property 'eventBroadcaster' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(44,14): error TS2339: Property 'sendMessage' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(56,42): error TS2339: Property 'cwd' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(58,10): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(59,10): error TS2339: Property 'worldParameters' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(60,10): error TS2339: Property 'filterStacktraces' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(61,14): error TS2339: Property 'filterStacktraces' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(62,12): error TS2339: Property 'stackTraceFilter' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(65,10): error TS2339: Property 'sendMessage' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(70,14): error TS2339: Property 'filterStacktraces' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(71,12): error TS2339: Property 'stackTraceFilter' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(73,10): error TS2339: Property 'exit' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(88,30): error TS2339: Property 'eventBroadcaster' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(91,32): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(93,29): error TS2339: Property 'worldParameters' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(96,10): error TS2339: Property 'sendMessage' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(100,29): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(107,16): error TS2339: Property 'supportCodeLibrary' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(115,53): error TS2339: Property 'id' does not exist on type 'Slave'.
+src/runtime/parallel/slave.ts(119,14): error TS2339: Property 'exit' does not exist on type 'Slave'.
+src/runtime/step_runner.ts(53,20): error TS2339: Property 'status' does not exist on type '{ duration: number; }'.
+src/runtime/step_runner.ts(55,20): error TS2339: Property 'status' does not exist on type '{ duration: number; }'.
+src/runtime/step_runner.ts(57,20): error TS2339: Property 'exception' does not exist on type '{ duration: number; }'.
+src/runtime/step_runner.ts(58,20): error TS2339: Property 'status' does not exist on type '{ duration: number; }'.
+src/runtime/step_runner.ts(60,20): error TS2339: Property 'status' does not exist on type '{ duration: number; }'.
+src/runtime/test_case_runner.ts(18,16): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(18,37): error TS2339: Property 'maxTestStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(24,21): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(29,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(30,10): error TS2339: Property 'maxAttempts' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(31,10): error TS2339: Property 'skip' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(32,10): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(33,10): error TS2339: Property 'supportCodeLibrary' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(34,10): error TS2339: Property 'world' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(38,10): error TS2551: Property 'beforeHookDefinitions' does not exist on type 'TestCaseRunner'. Did you mean 'getAfterHookDefinitions'?
+src/runtime/test_case_runner.ts(39,10): error TS2339: Property 'afterHookDefinitions' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(40,10): error TS2339: Property 'maxTestStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(41,12): error TS2551: Property 'beforeHookDefinitions' does not exist on type 'TestCaseRunner'. Did you mean 'getAfterHookDefinitions'?
+src/runtime/test_case_runner.ts(42,12): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(43,12): error TS2339: Property 'afterHookDefinitions' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(45,10): error TS2339: Property 'testCaseSourceLocation' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(46,17): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(47,18): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(53,10): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(54,10): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(56,20): error TS2339: Property 'skip' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(63,28): error TS2339: Property 'testCaseSourceLocation' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(65,14): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(66,20): error TS2339: Property 'attemptNumber' does not exist on type '{ sourceLocation: any; }'.
+src/runtime/test_case_runner.ts(66,41): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(73,10): error TS2339: Property 'eventBroadcaster' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(78,10): error TS2551: Property 'beforeHookDefinitions' does not exist on type 'TestCaseRunner'. Did you mean 'getAfterHookDefinitions'?
+src/runtime/test_case_runner.ts(82,10): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(88,19): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(93,14): error TS2339: Property 'actionLocation' does not exist on type '{ sourceLocation: { uri: any; line: any; }; }'.
+src/runtime/test_case_runner.ts(97,10): error TS2339: Property 'afterHookDefinitions' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(105,17): error TS2339: Property 'supportCodeLibrary' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(106,63): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(111,17): error TS2339: Property 'supportCodeLibrary' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(112,63): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(117,17): error TS2339: Property 'supportCodeLibrary' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(124,28): error TS2339: Property 'supportCodeLibrary' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(128,19): error TS2339: Property 'world' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(133,17): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(137,17): error TS2339: Property 'skip' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(147,16): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(150,21): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(155,50): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(158,12): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(161,12): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(164,12): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(167,19): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(170,10): error TS2339: Property 'testStepIndex' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(176,12): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(177,12): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(177,41): error TS2339: Property 'maxAttempts' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(178,12): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(180,12): error TS2554: Expected 2 arguments, but got 1.
+src/runtime/test_case_runner.ts(182,14): error TS2551: Property 'beforeHookDefinitions' does not exist on type 'TestCaseRunner'. Did you mean 'getAfterHookDefinitions'?
+src/runtime/test_case_runner.ts(184,32): error TS2339: Property 'testCaseSourceLocation' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(185,24): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(191,14): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(192,14): error TS2339: Property 'currentAttemptNumber' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(192,42): error TS2339: Property 'maxAttempts' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(194,14): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(197,14): error TS2339: Property 'afterHookDefinitions' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(199,32): error TS2339: Property 'testCaseSourceLocation' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(200,24): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(201,24): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(205,54): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(211,17): error TS2339: Property 'result' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner.ts(241,17): error TS2554: Expected 3 arguments, but got 2.
+src/runtime/test_case_runner.ts(245,29): error TS2339: Property 'testCase' does not exist on type 'TestCaseRunner'.
+src/runtime/test_case_runner_spec.ts(42,20): error TS2339: Property 'restore' does not exist on type '({ defaultTimeout, hookParameter, step, stepDefinition, world, }: { defaultTimeout: any; hookParameter: any; step: any; stepDefinition: any; world: any; }) => Promise<{ duration: number; }>'.
+src/runtime/test_case_runner_spec.ts(48,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(95,24): error TS2339: Property 'resolves' does not exist on type '({ defaultTimeout, hookParameter, step, stepDefinition, world, }: { defaultTimeout: any; hookParameter: any; step: any; stepDefinition: any; world: any; }) => Promise<{ duration: number; }>'.
+src/runtime/test_case_runner_spec.ts(98,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(175,24): error TS2339: Property 'resolves' does not exist on type '({ defaultTimeout, hookParameter, step, stepDefinition, world, }: { defaultTimeout: any; hookParameter: any; step: any; stepDefinition: any; world: any; }) => Promise<{ duration: number; }>'.
+src/runtime/test_case_runner_spec.ts(178,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(258,24): error TS2339: Property 'onFirstCall' does not exist on type '({ defaultTimeout, hookParameter, step, stepDefinition, world, }: { defaultTimeout: any; hookParameter: any; step: any; stepDefinition: any; world: any; }) => Promise<{ duration: number; }>'.
+src/runtime/test_case_runner_spec.ts(263,24): error TS2339: Property 'onSecondCall' does not exist on type '({ defaultTimeout, hookParameter, step, stepDefinition, world, }: { defaultTimeout: any; hookParameter: any; step: any; stepDefinition: any; world: any; }) => Promise<{ duration: number; }>'.
+src/runtime/test_case_runner_spec.ts(269,51): error TS2345: Argument of type '{ eventBroadcaster: any; retries: number; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; retries: number; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(394,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(473,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(541,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(625,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/runtime/test_case_runner_spec.ts(725,51): error TS2345: Argument of type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' is not assignable to parameter of type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+  Property 'worldParameters' is missing in type '{ eventBroadcaster: any; skip: boolean; testCase: any; supportCodeLibrary: any; }' but required in type '{ eventBroadcaster: any; retries?: number; skip: any; testCase: any; supportCodeLibrary: any; worldParameters: any; }'.
+src/stack_trace_filter.ts(16,10): error TS2339: Property 'currentFilter' does not exist on type 'StackTraceFilter'.
+src/stack_trace_filter.ts(46,37): error TS2339: Property 'currentFilter' does not exist on type 'StackTraceFilter'.
+src/support_code_library_builder/index.ts(66,26): error TS2749: 'ParameterTypeRegistry' refers to a value, but is being used as a type here.
+src/support_code_library_builder/index.ts(80,7): error TS2322: Type '(options: any, code: any) => void' is not assignable to type '{ (code: (...args: any[]) => void): void; (tags: string, code: (...args: any[]) => void): void; (options: IDefineTestCaseHookOptions, code: (...args: any[]) => void): void; }'.
+src/support_code_library_builder/index.ts(81,7): error TS2322: Type '(options: IDefineTestRunHookOptions, code: any) => void' is not assignable to type '{ (code: any): void; (options: IDefineTestRunHookOptions, code: any): void; }'.
+src/support_code_library_builder/index.ts(82,7): error TS2322: Type '(options: any, code: any) => void' is not assignable to type '{ (code: any): void; (tags: string, code: any): void; (options: IDefineTestCaseHookOptions, code: any): void; }'.
+src/support_code_library_builder/index.ts(83,7): error TS2322: Type '(options: IDefineTestRunHookOptions, code: any) => void' is not assignable to type '{ (code: any): void; (options: IDefineTestRunHookOptions, code: any): void; }'.
+src/time.ts(18,11): error TS2339: Property 'setImmediate' does not exist on type '{ beginTiming(): void; clearInterval: any; clearTimeout: any; Date: DateConstructor; endTiming(): number; setInterval: any; setTimeout: any; }'.
+src/time.ts(19,11): error TS2339: Property 'clearImmediate' does not exist on type '{ beginTiming(): void; clearInterval: any; clearTimeout: any; Date: DateConstructor; endTiming(): number; setInterval: any; setTimeout: any; }'.
+src/uncaught_exception_manager.ts(3,16): error TS2304: Cannot find name 'window'.
+src/uncaught_exception_manager.ts(6,7): error TS2304: Cannot find name 'window'.
+src/uncaught_exception_manager.ts(11,16): error TS2304: Cannot find name 'window'.
+src/uncaught_exception_manager.ts(14,7): error TS2304: Cannot find name 'window'.
+src/user_code_runner_spec.ts(36,19): error TS2339: Property 'error' does not exist on type '{}'.
+src/user_code_runner_spec.ts(90,19): error TS2339: Property 'error' does not exist on type '{}'.

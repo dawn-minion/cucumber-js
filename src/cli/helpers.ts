@@ -2,10 +2,12 @@ import _ from 'lodash'
 import ArgvParser from './argv_parser'
 import fs from 'mz/fs'
 import Gherkin from 'gherkin'
-import path from 'path'
+import * as path from 'path'
 import ProfileLoader from './profile_loader'
 import Promise from 'bluebird'
 import shuffle from 'knuth-shuffle-seeded'
+import EventEmitter from 'events'
+import PickleFilter from '../pickle_filter'
 
 export async function getExpandedArgv({ argv, cwd }) {
   const { options } = ArgvParser.parse(argv)
@@ -17,6 +19,15 @@ export async function getExpandedArgv({ argv, cwd }) {
   return fullArgv
 }
 
+interface IGetTestCasesFromFilesystemInput {
+  cwd: string;
+  eventBroadcaster: EventEmitter;
+  featureDefaultLanguage: string;
+  featurePaths: string[];
+  order: string;
+  pickleFilter: PickleFilter;
+}
+
 export async function getTestCasesFromFilesystem({
   cwd,
   eventBroadcaster,
@@ -24,7 +35,7 @@ export async function getTestCasesFromFilesystem({
   featurePaths,
   order,
   pickleFilter,
-}) {
+}: IGetTestCasesFromFilesystemInput) {
   let result = []
   await Promise.each(featurePaths, async featurePath => {
     const source = await fs.readFile(featurePath, 'utf8')

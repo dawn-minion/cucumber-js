@@ -4,7 +4,7 @@ import Formatter from './'
 export default class UsageJsonFormatter extends Formatter {
   constructor(options) {
     super(options)
-    options.eventBroadcaster.on('test-run-finished', ::this.logUsage)
+    options.eventBroadcaster.on('test-run-finished', this.logUsage.bind(this))
   }
 
   logUsage() {

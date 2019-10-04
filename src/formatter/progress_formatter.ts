@@ -16,12 +16,12 @@ export default class ProgressFormatter extends SummaryFormatter {
       this.log('\n\n')
     })
     super(options)
-    options.eventBroadcaster.on('test-step-finished', ::this.logProgress)
+    options.eventBroadcaster.on('test-step-finished', this.logProgress.bind(this))
   }
 
   logProgress({ result }) {
     const { status } = result
-    const character = this.colorFns[status](STATUS_CHARACTER_MAPPING[status])
+    const character = this.colorFns.forStatus(status)(STATUS_CHARACTER_MAPPING[status])
     this.log(character)
   }
 }

@@ -14,6 +14,14 @@ import TestCaseHookDefinition from '../models/test_case_hook_definition'
 import TestRunHookDefinition from '../models/test_run_hook_definition'
 import validateArguments from './validate_arguments'
 
+export interface IStepDefinitionConfig {
+  code: any;
+  line: string;
+  options: any;
+  pattern: string | RegExp;
+  uri: string;
+}
+
 export function buildTestCaseHookDefinition({ options, code, cwd }) {
   if (typeof options === 'string') {
     options = { tags: options }

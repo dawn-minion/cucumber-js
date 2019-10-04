@@ -7,11 +7,11 @@ export default class ProgressBarFormatter extends Formatter {
   constructor(options) {
     super(options)
     options.eventBroadcaster
-      .on('pickle-accepted', ::this.incrementStepCount)
-      .once('test-step-started', ::this.initializeProgressBar)
-      .on('test-step-finished', ::this.logProgress)
-      .on('test-case-finished', ::this.logErrorIfNeeded)
-      .on('test-run-finished', ::this.logSummary)
+      .on('pickle-accepted', this.incrementStepCount.bind(this))
+      .once('test-step-started', this.initializeProgressBar.bind(this))
+      .on('test-step-finished', this.logProgress.bind(this))
+      .on('test-case-finished', this.logErrorIfNeeded.bind(this))
+      .on('test-run-finished', this.logSummary.bind(this))
     this.numberOfSteps = 0
     this.issueCount = 0
   }

@@ -49,7 +49,7 @@ function getCountSummary({ colorFns, objects, type }) {
     const details = []
     STATUS_REPORT_ORDER.forEach(status => {
       if (counts[status] > 0) {
-        details.push(colorFns[status](`${counts[status]} ${status}`))
+        details.push(colorFns.forStatus(status)(`${counts[status]} ${status}`))
       }
     })
     text += ` (${details.join(', ')})`

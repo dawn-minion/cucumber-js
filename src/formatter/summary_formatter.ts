@@ -5,7 +5,7 @@ import Formatter from './'
 export default class SummaryFormatter extends Formatter {
   constructor(options) {
     super(options)
-    options.eventBroadcaster.on('test-run-finished', ::this.logSummary)
+    options.eventBroadcaster.on('test-run-finished', this.logSummary.bind(this))
   }
 
   logSummary(testRun) {

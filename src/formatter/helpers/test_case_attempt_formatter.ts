@@ -18,14 +18,14 @@ const CHARACTERS = {
 function getStepMessage({ colorFns, testStep }) {
   switch (testStep.result.status) {
     case Status.AMBIGUOUS:
-      return colorFns.ambiguous(testStep.result.exception)
+      return colorFns.forStatus(Status.AMBIGUOUS)(testStep.result.exception)
     case Status.FAILED:
       return formatError(testStep.result.exception, colorFns)
     case Status.UNDEFINED:
       return `${'Undefined. Implement with the following snippet:' +
         '\n\n'}${indentString(testStep.snippet, 2)}\n`
     case Status.PENDING:
-      return colorFns.pending('Pending')
+      return colorFns.forStatus(Status.PENDING)('Pending')
   }
   return ''
 }

@@ -8,8 +8,8 @@ export default class RerunFormatter extends Formatter {
   constructor(options) {
     super(options)
     options.eventBroadcaster
-      .on('test-case-finished', ::this.storeFailedTestCases)
-      .on('test-run-finished', ::this.logFailedTestCases)
+      .on('test-case-finished', this.storeFailedTestCases.bind(this))
+      .on('test-run-finished', this.logFailedTestCases.bind(this))
     this.mapping = {}
     this.separator = _.get(options, 'rerun.separator', DEFAULT_SEPARATOR)
   }

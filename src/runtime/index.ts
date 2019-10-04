@@ -69,7 +69,7 @@ export default class Runtime {
     }
     this.eventBroadcaster.emit('test-run-started')
     await this.runTestRunHooks('beforeTestRunHookDefinitions', 'a BeforeAll')
-    await Promise.each(this.testCases, ::this.runTestCase)
+    await Promise.each(this.testCases, this.runTestCase.bind(this))
     await this.runTestRunHooks('afterTestRunHookDefinitions', 'an AfterAll')
     this.eventBroadcaster.emit('test-run-finished', { result: this.result })
     if (this.options.filterStacktraces) {

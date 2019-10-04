@@ -4,6 +4,8 @@ import path from 'path'
 import stringArgv from 'string-argv'
 
 export default class ProfileLoader {
+  private directory: string;
+
   constructor(directory) {
     this.directory = directory
   }

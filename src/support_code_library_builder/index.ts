@@ -7,10 +7,73 @@ import {
   buildStepDefinitionFromConfig,
   buildTestCaseHookDefinition,
   buildTestRunHookDefinition,
+  IStepDefinitionConfig,
 } from './build_helpers'
 import { wrapDefinitions } from './finalize_helpers'
+import StepDefinition from '../models/step_definition'
+import TestCaseHookDefinition from '../models/test_case_hook_definition'
+import TestRunHookDefinition from '../models/test_run_hook_definition'
+import { ParameterTypeRegistry } from 'cucumber-expressions'
+
+export type DefineStepPattern = string | RegExp
+
+export interface IDefineStepOptions {
+  timeout?: number;
+  wrapperOptions?: any;
+}
+
+export interface IDefineTestCaseHookOptions {
+  tags?: string;
+  timeout?: number;
+}
+
+export interface IDefineTestRunHookOptions {
+  timeout?: number;
+}
+
+export interface IDefineSupportCodeMethods {
+  defineParameterType(options: any): void;
+  defineStep(pattern: DefineStepPattern, code: any): void;
+  defineStep(pattern: DefineStepPattern, options: IDefineStepOptions, code: any): void;
+  setDefaultTimeout(milliseconds: number): void;
+  setDefinitionFunctionWrapper(fn: any): void;
+  setWorldConstructor(fn: any): void;
+  After(code: any): void;
+  After(tags: string, code: any): void;
+  After(options: IDefineTestCaseHookOptions, code: any): void;
+  AfterAll(code: any): void;
+  AfterAll(options: IDefineTestRunHookOptions, code: any): void;
+  Before(code: any): void;
+  Before(tags: string, code: any): void;
+  Before(options: IDefineTestCaseHookOptions, code: any): void;
+  BeforeAll(code: any): void;
+  BeforeAll(options: IDefineTestRunHookOptions, code: any): void;
+  Given(pattern: DefineStepPattern, code: any): void;
+  Given(pattern: DefineStepPattern, options: IDefineStepOptions, code: any): void;
+  Then(pattern: DefineStepPattern, code: any): void;
+  Then(pattern: DefineStepPattern, options: IDefineStepOptions, code: any): void;
+  When(pattern: DefineStepPattern, code: any): void;
+  When(pattern: DefineStepPattern, options: IDefineStepOptions, code: any): void;
+}
+
+export interface ISupportCodeLibrary {
+  afterTestCaseHookDefinitions: TestCaseHookDefinition[],
+  afterTestRunHookDefinitions: TestRunHookDefinition[],
+  beforeTestCaseHookDefinitions: TestCaseHookDefinition[],
+  beforeTestRunHookDefinitions: TestRunHookDefinition[],
+  defaultTimeout: number,
+  stepDefinitions: StepDefinition[],
+  parameterTypeRegistry: ParameterTypeRegistry,
+  World: any,
+}
 
 export class SupportCodeLibraryBuilder {
+  public methods: IDefineSupportCodeMethods;
+  private cwd: string;
+  private options: ISupportCodeLibrary;
+  private definitionFunctionWrapper: any;
+  private stepDefinitionConfigs: IStepDefinitionConfig[];
+
   constructor() {
     this.methods = {
       defineParameterType: this.defineParameterType.bind(this),
@@ -19,14 +82,11 @@ export class SupportCodeLibraryBuilder {
       Before: this.defineTestCaseHook('beforeTestCaseHookDefinitions'),
       BeforeAll: this.defineTestRunHook('beforeTestRunHookDefinitions'),
       defineStep: this.defineStep.bind(this),
-      defineSupportCode: util.deprecate(fn => {
-        fn(this.methods)
-      }, 'cucumber: defineSupportCode is deprecated. Please require/import the individual methods instead.'),
       setDefaultTimeout: milliseconds => {
         this.options.defaultTimeout = milliseconds
       },
       setDefinitionFunctionWrapper: fn => {
-        this.options.definitionFunctionWrapper = fn
+        this.definitionFunctionWrapper = fn
       },
       setWorldConstructor: fn => {
         this.options.World = fn
@@ -47,7 +107,7 @@ export class SupportCodeLibraryBuilder {
       code,
       cwd: this.cwd,
     })
-    this.options.stepDefinitionConfigs.push(stepDefinitionConfig)
+    this.stepDefinitionConfigs.push(stepDefinitionConfig)
   }
 
   defineTestCaseHook(collectionName) {
@@ -62,7 +122,7 @@ export class SupportCodeLibraryBuilder {
   }
 
   defineTestRunHook(collectionName) {
-    return (options, code) => {
+    return (options: IDefineTestRunHookOptions, code) => {
       const hookDefinition = buildTestRunHookDefinition({
         options,
         code,
@@ -73,17 +133,16 @@ export class SupportCodeLibraryBuilder {
   }
 
   finalize() {
-    this.options.stepDefinitions = this.options.stepDefinitionConfigs.map(
+    this.options.stepDefinitions = this.stepDefinitionConfigs.map(
       config =>
         buildStepDefinitionFromConfig({
           config,
           parameterTypeRegistry: this.options.parameterTypeRegistry,
         })
     )
-    delete this.options.stepDefinitionConfigs
     wrapDefinitions({
       cwd: this.cwd,
-      definitionFunctionWrapper: this.options.definitionFunctionWrapper,
+      definitionFunctionWrapper: this.definitionFunctionWrapper,
       definitions: _.chain([
         'afterTestCaseHook',
         'afterTestRunHook',
@@ -102,14 +161,14 @@ export class SupportCodeLibraryBuilder {
 
   reset(cwd) {
     this.cwd = cwd
+    this.definitionFunctionWrapper = null;
+    this.stepDefinitionConfigs = [];
     this.options = _.cloneDeep({
       afterTestCaseHookDefinitions: [],
       afterTestRunHookDefinitions: [],
       beforeTestCaseHookDefinitions: [],
       beforeTestRunHookDefinitions: [],
       defaultTimeout: 5000,
-      definitionFunctionWrapper: null,
-      stepDefinitionConfigs: [],
       parameterTypeRegistry: TransformLookupBuilder.build(),
       World({ attach, parameters }) {
         this.attach = attach

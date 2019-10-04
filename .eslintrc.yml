@@ -1,19 +1,6 @@
-env:
-  browser: true
-  es6: true
-  node: true
 extends:
-  - standard
-  - prettier
-parser: babel-eslint
+  - standard-with-typescript
+  - 'plugin:prettier/recommended'
+  - 'prettier/standard'
 parserOptions:
-  sourceType: module
-plugins:
-  - babel
-  - prettier
-rules:
-  prettier/prettier:
-    - error
-    - trailingComma: es5
-      singleQuote: true
-      semi: false
+  project: './tsconfig.node.json'

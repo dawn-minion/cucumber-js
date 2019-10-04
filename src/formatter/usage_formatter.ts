@@ -6,7 +6,7 @@ import Table from 'cli-table3'
 export default class UsageFormatter extends Formatter {
   constructor(options) {
     super(options)
-    options.eventBroadcaster.on('test-run-finished', ::this.logUsage)
+    options.eventBroadcaster.on('test-run-finished', this.logUsage.bind(this))
   }
 
   logUsage() {

@@ -3,7 +3,7 @@ import { expect } from 'chai'
 import { promisify } from 'bluebird'
 import ConfigurationBuilder from './configuration_builder'
 import fsExtra from 'fs-extra'
-import path from 'path'
+import * as path from 'path'
 import tmp from 'tmp'
 
 describe('Configuration', () => {

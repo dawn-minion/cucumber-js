@@ -4,8 +4,14 @@ import parse from 'cucumber-tag-expressions'
 
 const FEATURE_LINENUM_REGEXP = /^(.*?)((?::[\d]+)+)?$/
 
+export interface IPickleFilterOptions {
+  featurePaths?: string[];
+  names?: string[];
+  tagExpression?: string;
+}
+
 export default class PickleFilter {
-  constructor({ featurePaths, names, tagExpression }) {
+  constructor({ featurePaths, names, tagExpression }: IPickleFilterOptions) {
     this.featureUriToLinesMapping = this.getFeatureUriToLinesMapping(
       featurePaths || []
     )

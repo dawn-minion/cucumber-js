@@ -5,7 +5,7 @@ import { parseTestCaseAttempt, formatError } from './helpers'
 export default class JsonFormatter extends Formatter {
   constructor(options) {
     super(options)
-    options.eventBroadcaster.on('test-run-finished', ::this.onTestRunFinished)
+    options.eventBroadcaster.on('test-run-finished', this.onTestRunFinished.bind(this))
   }
 
   formatExceptionIfNeeded(obj) {

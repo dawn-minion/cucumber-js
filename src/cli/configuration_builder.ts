@@ -1,7 +1,8 @@
 import _ from 'lodash'
 import ArgvParser from './argv_parser'
+import { IParsedArgvOptions } from './argv_parser'
 import fs from 'mz/fs'
-import path from 'path'
+import * as path from 'path'
 import OptionSplitter from './option_splitter'
 import Promise, { promisify } from 'bluebird'
 import glob from 'glob'
@@ -13,6 +14,10 @@ export default class ConfigurationBuilder {
     const builder = new ConfigurationBuilder(options)
     return builder.build()
   }
+
+  private cwd: string;
+  private args: string[]
+  private options: IParsedArgvOptions;
 
   constructor({ argv, cwd }) {
     this.cwd = cwd

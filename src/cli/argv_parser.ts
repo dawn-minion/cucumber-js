@@ -1,8 +1,36 @@
 import _ from 'lodash'
 import { Command } from 'commander'
 import { version } from '../../package.json'
-import path from 'path'
+import * as path from 'path'
 import Gherkin from 'gherkin'
+
+export interface IParsedArgvOptions {
+  backtrace: boolean;
+  dryRun: boolean;
+  exit: boolean;
+  failFast: boolean;
+  format: string[];
+  formatOptions: any; // TODO create object
+  i18nKeywords: string;
+  i18nLanguages: boolean;
+  language: string;
+  name: string[];
+  order: string;
+  parallel: number;
+  profile: string[];
+  require: string[];
+  requireModule: string[];
+  retry: number;
+  retryTagFilter: string;
+  strict: boolean;
+  tags: string;
+  worldParameters: any; // TODO map of string to any
+}
+
+export interface IParsedArgv {
+  args: string[];
+  options: IParsedArgvOptions;
+}
 
 export default class ArgvParser {
   static collect(val, memo) {
@@ -54,7 +82,7 @@ export default class ArgvParser {
     }
   }
 
-  static parse(argv) {
+  static parse(argv): IParsedArgv {
     const program = new Command(path.basename(argv[1]))
 
     program
@@ -162,7 +190,7 @@ export default class ArgvParser {
     })
 
     program.parse(argv)
-    const options = program.opts()
+    const options = program.opts() as IParsedArgvOptions;
     ArgvParser.validateRetryOptions(options)
 
     return {

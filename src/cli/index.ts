@@ -12,8 +12,13 @@ import Promise from 'bluebird'
 import ParallelRuntimeMaster from '../runtime/parallel/master'
 import Runtime from '../runtime'
 import supportCodeLibraryBuilder from '../support_code_library_builder'
+import { WriteStream } from 'tty'
 
 export default class Cli {
+  private argv: string[];
+  private cwd: string;
+  private stdout: WriteStream;
+
   constructor({ argv, cwd, stdout }) {
     this.argv = argv
     this.cwd = cwd
@@ -43,7 +48,7 @@ export default class Cli {
       const typeOptions = {
         eventBroadcaster,
         eventDataCollector,
-        log: ::stream.write,
+        log: stream.write.bind(stream),
         stream,
         supportCodeLibrary,
         ...formatOptions,
@@ -64,7 +69,7 @@ export default class Cli {
     })
     return function() {
       return Promise.each(streamsToClose, stream =>
-        Promise.promisify(::stream.end)()
+        Promise.promisify(stream.end.bind(stream))()
       )
     }
   }

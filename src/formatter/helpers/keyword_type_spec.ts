@@ -1,14 +1,8 @@
 import { beforeEach, describe, it } from 'mocha'
 import { expect } from 'chai'
-import KeywordType, { getStepKeywordType } from './keyword_type'
+import { KeywordType, getStepKeywordType } from './keyword_type'
 
 describe('KeywordType', () => {
-  describe('constants', () => {
-    it('exposes the proper constants', () => {
-      expect(KeywordType).to.include.keys(['EVENT', 'OUTCOME', 'PRECONDITION'])
-    })
-  })
-
   describe('getStepKeywordType()', () => {
     describe('keyword is Given', () => {
       beforeEach(function() {
@@ -19,7 +13,7 @@ describe('KeywordType', () => {
       })
 
       it('returns precondition', function() {
-        expect(this.keywordType).to.eql(KeywordType.PRECONDITION)
+        expect(this.keywordType).to.eql(KeywordType.Precondition)
       })
     })
 
@@ -32,7 +26,7 @@ describe('KeywordType', () => {
       })
 
       it('returns event', function() {
-        expect(this.keywordType).to.eql(KeywordType.EVENT)
+        expect(this.keywordType).to.eql(KeywordType.Event)
       })
     })
 
@@ -45,7 +39,7 @@ describe('KeywordType', () => {
       })
 
       it('returns outcome', function() {
-        expect(this.keywordType).to.eql(KeywordType.OUTCOME)
+        expect(this.keywordType).to.eql(KeywordType.Outcome)
       })
     })
 
@@ -58,7 +52,7 @@ describe('KeywordType', () => {
       })
 
       it('returns precondition', function() {
-        expect(this.keywordType).to.eql(KeywordType.PRECONDITION)
+        expect(this.keywordType).to.eql(KeywordType.Precondition)
       })
     })
 
@@ -67,12 +61,12 @@ describe('KeywordType', () => {
         this.keywordType = getStepKeywordType({
           keyword: 'And ',
           language: 'en',
-          previousKeywordType: KeywordType.EVENT,
+          previousKeywordType: KeywordType.Event,
         })
       })
 
       it('returns event', function() {
-        expect(this.keywordType).to.eql(KeywordType.EVENT)
+        expect(this.keywordType).to.eql(KeywordType.Event)
       })
     })
 
@@ -85,7 +79,7 @@ describe('KeywordType', () => {
       })
 
       it('returns precondition', function() {
-        expect(this.keywordType).to.eql(KeywordType.PRECONDITION)
+        expect(this.keywordType).to.eql(KeywordType.Precondition)
       })
     })
 
@@ -94,26 +88,25 @@ describe('KeywordType', () => {
         this.keywordType = getStepKeywordType({
           keyword: 'But ',
           language: 'en',
-          previousKeywordType: KeywordType.OUTCOME,
+          previousKeywordType: KeywordType.Outcome,
         })
       })
 
       it('returns outcome', function() {
-        expect(this.keywordType).to.eql(KeywordType.OUTCOME)
+        expect(this.keywordType).to.eql(KeywordType.Outcome)
       })
     })
 
     describe('keyword is unknown', () => {
       beforeEach(function() {
         this.keywordType = getStepKeywordType({
-          index: 0,
+          keyword: 'other ',
           language: 'en',
-          stepKeywords: ['other '],
         })
       })
 
       it('returns precondition', function() {
-        expect(this.keywordType).to.eql(KeywordType.PRECONDITION)
+        expect(this.keywordType).to.eql(KeywordType.Precondition)
       })
     })
   })

@@ -32,7 +32,7 @@ export default class TestCaseRunner {
     this.testCase = testCase
     this.supportCodeLibrary = supportCodeLibrary
     this.world = new supportCodeLibrary.World({
-      attach: ::attachmentManager.create,
+      attach: attachmentManager.create.bind(attachmentManager),
       parameters: worldParameters,
     })
     this.beforeHookDefinitions = this.getBeforeHookDefinitions()

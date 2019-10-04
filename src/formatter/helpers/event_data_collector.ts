@@ -1,15 +1,20 @@
 import _ from 'lodash'
 
 export default class EventDataCollector {
+  private gherkinDocumentMap: any;
+  private pickleMap: any;
+  private testCaseMap: any;
+  private testCaseAttemptMap: any;
+
   constructor(eventBroadcaster) {
     eventBroadcaster
-      .on('gherkin-document', ::this.storeGherkinDocument)
-      .on('pickle', ::this.storePickle)
-      .on('test-case-prepared', ::this.storeTestCase)
-      .on('test-step-attachment', ::this.storeTestStepAttachment)
-      .on('test-case-started', ::this.initTestCaseResult)
-      .on('test-step-finished', ::this.storeTestStepResult)
-      .on('test-case-finished', ::this.storeTestCaseResult)
+      .on('gherkin-document', this.storeGherkinDocument.bind(this))
+      .on('pickle', this.storePickle.bind(this))
+      .on('test-case-prepared', this.storeTestCase.bind(this))
+      .on('test-step-attachment', this.storeTestStepAttachment.bind(this))
+      .on('test-case-started', this.initTestCaseResult.bind(this))
+      .on('test-step-finished', this.storeTestStepResult.bind(this))
+      .on('test-case-finished', this.storeTestCaseResult.bind(this))
     this.gherkinDocumentMap = {} // uri to gherkinDocument
     this.pickleMap = {} // uri:line to pickle
     this.testCaseMap = {} // uri:line to {sourceLocation, steps}

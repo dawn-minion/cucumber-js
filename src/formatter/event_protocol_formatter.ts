@@ -20,6 +20,8 @@ const EVENT_NAMES = [
 ]
 
 export default class EventProtocolFormatter extends Formatter {
+  private pathRegexp: string;
+
   constructor(options) {
     super(options)
     EVENT_NAMES.forEach(eventName => {
@@ -37,7 +39,7 @@ export default class EventProtocolFormatter extends Formatter {
   logEvent(eventName, data) {
     const text = JSON.stringify(
       { type: eventName, ...data },
-      ::this.formatJsonData
+      this.formatJsonData
     )
     this.log(`${text}\n`)
   }

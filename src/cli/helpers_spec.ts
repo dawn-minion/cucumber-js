@@ -5,7 +5,7 @@ import { getTestCasesFromFilesystem } from './helpers'
 import { promisify } from 'bluebird'
 import EventEmitter from 'events'
 import fsExtra from 'fs-extra'
-import path from 'path'
+import * as path from 'path'
 import PickleFilter from '../pickle_filter'
 import tmp from 'tmp'
 
@@ -34,6 +34,7 @@ describe('helpers', () => {
         this.result = await getTestCasesFromFilesystem({
           cwd: this.tmpDir,
           eventBroadcaster: this.eventBroadcaster,
+          featureDefaultLanguage: 'en',
           featurePaths: [featurePath],
           order: 'defined',
           pickleFilter: new PickleFilter({}),
@@ -79,6 +80,7 @@ describe('helpers', () => {
         this.result = await getTestCasesFromFilesystem({
           cwd: this.tmpDir,
           eventBroadcaster: this.eventBroadcaster,
+          featureDefaultLanguage: 'en',
           featurePaths: [featurePath],
           order: 'defined',
           pickleFilter: new PickleFilter({
@@ -120,6 +122,7 @@ describe('helpers', () => {
         this.result = await getTestCasesFromFilesystem({
           cwd: this.tmpDir,
           eventBroadcaster: this.eventBroadcaster,
+          featureDefaultLanguage: 'en',
           featurePaths: [featurePath],
           order: 'defined',
           pickleFilter: new PickleFilter({}),
